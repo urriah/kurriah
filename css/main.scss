@@ -1,0 +1,176 @@
+body {
+    background: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.link-logo {
+    margin-right: 10px;
+}
+
+.right-side {
+    display: flex;
+    gap: 15px;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.hero {
+
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    height: 80vh;
+  
+  }
+
+  img {
+    float: left;
+  }
+
+  button {
+    background-color: #555555;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #555555;
+    transition-duration: 0.4s;
+    color: white;
+    width: 115px;
+    text-align: center;
+    display: block;
+    margin: 10px left;
+  }
+
+  button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  button:active {
+    background-color: black;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .github-logo {
+    margin: auto 5px;
+    
+  }
+
+  .columns-container {
+    display: flex;
+    align-items: center; /* Ensures all columns stretch to the same height */
+}
+
+.column-left {
+    align-items: center;
+    min-height: 240px;
+}
+
+  .column {
+    --characters: 26;
+    --typingSpeed: 5s;
+
+    padding: 30px; 
+    margin: 10px;
+    column-rule-style: solid;
+  }
+
+    .text {
+      position: relative;
+      
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      &::before {
+        background: white;
+        animation: typing var(--typingSpeed) steps(var(--characters)) 2s infinite;
+      }
+      &::after {
+        background: green;
+        width: 1ch;
+        animation: 
+          typing var(--typingSpeed) steps(var(--characters)) 2s infinite,
+          blinking 0.25s ease alternate infinite;
+      }
+    }
+  
+  @keyframes blinking {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes typing {
+    80%, 100% {
+      left: 100%;
+    }
+  }
+
+  .socmed-cta {
+    list-style-type: none;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    float: left;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
